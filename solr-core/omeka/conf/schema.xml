@@ -94,7 +94,11 @@
     <field name="title" type="text_en" indexed="true" stored="true" multiValued="true" />
     <field name="tag" type="string" indexed="true" stored="true" multiValued="true" />
     <field name="collection" type="string" indexed="true" stored="true" />
+<<<<<<< HEAD
     <field name="public" type="string" indexed="true" stored="true" />
+=======
+    <field name="public" type="boolean" indexed="true" stored="true" />
+>>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
     <field name="featured" type="boolean" indexed="true" stored="true" />
     <field name="itemtype" type="string" indexed="true" stored="true" />
     <field name="resulttype" type="string" indexed="true" stored="true" />
@@ -126,8 +130,13 @@
   generated queries are best made explicit, or they can use the "df" request parameter
   which takes precedence over this.
   Note: Un-commenting defaultSearchField will be insufficient if your request handler
+<<<<<<< HEAD
   in solrconfig.xml defines "df", which takes precedence. That would need to be removed.-->
  <defaultSearchField>text</defaultSearchField> 
+=======
+  in solrconfig.xml defines "df", which takes precedence. That would need to be removed.
+ <defaultSearchField>text</defaultSearchField> -->
+>>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 
  <!-- DEPRECATED: The defaultOperator (AND|OR) is consulted by various query parsers
   when parsing a query string to determine if a clause of the query should be marked as

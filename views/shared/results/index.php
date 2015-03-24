@@ -114,7 +114,10 @@
 
         <!-- Record URL. -->
         <?php $url = SolrSearch_Helpers_View::getDocumentUrl($doc); ?>
-
+        
+        <!-- Record ImageHtml -->
+        <?php $imgHtml = SolrSearch_Helpers_View::createResultImageHtml($doc); ?>
+        
         <!-- Title. -->
         <a href="<?php echo $url; ?>" class="result-title">
             <?php
@@ -123,11 +126,12 @@
                     $title = '<i>' . __('Untitled') . '</i>';
                 }
                 echo $title;
+                echo $imgHtml;
             ?>
         </a>
 
-        <!-- Result type. -->
-        <span class="result-type">(<?php echo $doc->resulttype; ?>)</span>
+        <!-- Result type. 
+        <span class="result-type">(<?php echo $doc->resulttype; ?>)</span>-->
 
       </div>
 
