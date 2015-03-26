@@ -3,11 +3,7 @@
 .clearfix {
   *zoom: 1;
 }
-<<<<<<< HEAD
 /* line 100, sass/_mixins.scss */
-=======
-/* line 99, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
@@ -41,11 +37,7 @@
 .clearfix {
   *zoom: 1;
 }
-<<<<<<< HEAD
 /* line 731, sass/_mixins.scss */
-=======
-/* line 730, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
@@ -85,31 +77,18 @@
   font-size: 13px;
   line-height: 18px;
   *line-height: 20px;
-<<<<<<< HEAD
   color: #333333;
-=======
-  color: #333;
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   cursor: pointer;
   background-color: whitesmoke;
-<<<<<<< HEAD
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
   background-image: -ms-linear-gradient(top, white, #e6e6e6);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
   background-image: -o-linear-gradient(top, white, #e6e6e6);
   background-image: linear-gradient(top, #ffffff, #e6e6e6);
-=======
-  background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
-  background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #fff, #e6e6e6);
-  background-image: linear-gradient(top, #fff, #e6e6e6);
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
@@ -117,11 +96,7 @@
   *background-color: #e6e6e6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-<<<<<<< HEAD
   border: 1px solid #cccccc;
-=======
-  border: 1px solid #ccc;
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
   *border: 0;
   border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
@@ -137,11 +112,7 @@
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
-<<<<<<< HEAD
 /* line 1189, sass/_mixins.scss */
-=======
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn:active, .btn.active {
   background-color: #cccccc \9;
 }
@@ -152,11 +123,7 @@
 
 /* line 38, sass/_buttons.scss */
 .btn:hover {
-<<<<<<< HEAD
   color: #333333;
-=======
-  color: #333;
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
   text-decoration: none;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
@@ -176,11 +143,7 @@
   outline-offset: -2px;
 }
 
-<<<<<<< HEAD
 /* line 57, sass/_buttons.scss */
-=======
-/* line 56, sass/_buttons.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn.active,
 .btn:active {
   background-color: #e6e6e6;
@@ -192,11 +155,7 @@
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-<<<<<<< HEAD
 /* line 68, sass/_buttons.scss */
-=======
-/* line 67, sass/_buttons.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn.disabled,
 .btn[disabled] {
   cursor: default;
@@ -243,11 +202,7 @@
   line-height: 14px;
 }
 
-<<<<<<< HEAD
 /* line 125, sass/_buttons.scss */
-=======
-/* line 114, sass/_buttons.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-primary,
 .btn-primary:hover,
 .btn-warning,
@@ -260,19 +215,11 @@
 .btn-info:hover,
 .btn-inverse,
 .btn-inverse:hover {
-<<<<<<< HEAD
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 135, sass/_buttons.scss */
-=======
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-/* line 130, sass/_buttons.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-primary.active,
 .btn-warning.active,
 .btn-danger.active,
@@ -291,21 +238,12 @@
 /* line 146, sass/_buttons.scss */
 .btn-primary {
   background-color: #0073cc;
-<<<<<<< HEAD
   background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
   background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
   background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
   background-image: -o-linear-gradient(top, #0088cc, #0055cc);
   background-image: linear-gradient(top, #0088cc, #0055cc);
-=======
-  background-image: -moz-linear-gradient(top, #08c, #0055cc);
-  background-image: -ms-linear-gradient(top, #08c, #0055cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#0055cc));
-  background-image: -webkit-linear-gradient(top, #08c, #0055cc);
-  background-image: -o-linear-gradient(top, #08c, #0055cc);
-  background-image: linear-gradient(top, #08c, #0055cc);
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0053c7', GradientType=0);
   border-color: #0055cc #0055cc #003580;
@@ -319,11 +257,7 @@
   background-color: #0055cc;
   *background-color: #004ab3;
 }
-<<<<<<< HEAD
 /* line 1189, sass/_mixins.scss */
-=======
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-primary:active, .btn-primary.active {
   background-color: #004099 \9;
 }
@@ -350,11 +284,7 @@
   background-color: #f89406;
   *background-color: #df8505;
 }
-<<<<<<< HEAD
 /* line 1189, sass/_mixins.scss */
-=======
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-warning:active, .btn-warning.active {
   background-color: #c67605 \9;
 }
@@ -381,11 +311,7 @@
   background-color: #bd362f;
   *background-color: #a9302a;
 }
-<<<<<<< HEAD
 /* line 1189, sass/_mixins.scss */
-=======
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-danger:active, .btn-danger.active {
   background-color: #942a25 \9;
 }
@@ -412,11 +338,7 @@
   background-color: #51a351;
   *background-color: #499249;
 }
-<<<<<<< HEAD
 /* line 1189, sass/_mixins.scss */
-=======
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-success:active, .btn-success.active {
   background-color: #408140 \9;
 }
@@ -443,11 +365,7 @@
   background-color: #2f96b4;
   *background-color: #2a85a0;
 }
-<<<<<<< HEAD
 /* line 1189, sass/_mixins.scss */
-=======
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-info:active, .btn-info.active {
   background-color: #24748c \9;
 }
@@ -455,7 +373,6 @@
 /* line 166, sass/_buttons.scss */
 .btn-inverse {
   background-color: #404040;
-<<<<<<< HEAD
   background-image: -moz-linear-gradient(top, #555555, #222222);
   background-image: -ms-linear-gradient(top, #555555, #222222);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
@@ -467,44 +384,20 @@
   border-color: #222222 #222222 black;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #222222;
-=======
-  background-image: -moz-linear-gradient(top, #555, #222);
-  background-image: -ms-linear-gradient(top, #555, #222);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555), to(#222));
-  background-image: -webkit-linear-gradient(top, #555, #222);
-  background-image: -o-linear-gradient(top, #555, #222);
-  background-image: linear-gradient(top, #555, #222);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#525252', endColorstr='#1f1f1f', GradientType=0);
-  border-color: #222 #222 black;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #222;
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 1182, sass/_mixins.scss */
 .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
-<<<<<<< HEAD
   background-color: #222222;
   *background-color: #151515;
 }
 /* line 1189, sass/_mixins.scss */
-=======
-  background-color: #222;
-  *background-color: #151515;
-}
-/* line 1188, sass/_mixins.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 .btn-inverse:active, .btn-inverse.active {
   background-color: #090909 \9;
 }
 
-<<<<<<< HEAD
 /* line 175, sass/_buttons.scss */
-=======
-/* line 174, sass/_buttons.scss */
->>>>>>> 15ec227f1c20f41c44cb8e801bbc1fe38f4ffa46
 button.btn,
 input[type="submit"].btn {
   *padding-top: 2px;
