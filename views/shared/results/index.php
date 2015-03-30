@@ -109,14 +109,12 @@
     <!-- Document. -->
     <div class="result">
 
-      <!-- Header. -->
-      <div class="result-header">
+
 
         <!-- Record URL. -->
-        <?php $url = SolrSearch_Helpers_View::getDocumentUrl($doc); ?>
-        
-        <!-- Record ImageHtml -->
-        <?php $imgHtml = SolrSearch_Helpers_View::createResultImageHtml($doc); ?>
+        <?php $url = SolrSearch_Helpers_View::getDocumentUrl($doc); 
+              $imgHtml = SolrSearch_Helpers_View::getDocumentImg($doc, 'square_thumbnail');?>
+
         
         <!-- Title. -->
         <a href="<?php echo $url; ?>" class="result-title">
@@ -126,14 +124,11 @@
                     $title = '<i>' . __('Untitled') . '</i>';
                 }
                 echo $title;
-                echo $imgHtml;
             ?>
         </a>
+            <?php echo $imgHtml; ?>
 
-        <!-- Result type. 
-        <span class="result-type">(<?php echo $doc->resulttype; ?>)</span>-->
 
-      </div>
 
       <!-- Highlighting. -->
       <?php if (get_option('solr_search_hl')): ?>

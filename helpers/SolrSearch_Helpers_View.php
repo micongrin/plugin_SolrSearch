@@ -93,5 +93,19 @@ class SolrSearch_Helpers_View
         return SolrSearch_Helpers_Index::getUri($record);
     }
 
+    /** Get the image for a record that correspons to a Solr document.
+     *
+     * @param Apache_Solr_Document $doc A Solr Document.
+     * @param $imageType The size of the image to return (square_thumbnail, thumbnail, fullsize)
+     *
+     * @return string The url for the image of a record.
+     */
+    public static function getDocumentImg($doc, $imageType)
+    {
+        $record = get_db()->getTable($doc->model)->find($doc->modelid);
+        //return SolrSearch_Helpers_Index::getUri($record);
+        return record_image($record, 'square_thumbnail');
+    }
+
 
 }
