@@ -104,31 +104,22 @@
     <?php echo $results->response->numFound; ?> results
   </h2>
 
-  <?php foreach ($results->response->docs as $doc): ?>
-
-    <!-- Document. -->
-    <div class="result">
-
-
-
-        <!-- Record URL. -->
-        <?php $url = SolrSearch_Helpers_View::getDocumentUrl($doc); 
-              $imgHtml = SolrSearch_Helpers_View::getDocumentImg($doc, 'square_thumbnail');?>
-
-        
-        <!-- Title. -->
-        <a href="<?php echo $url; ?>" class="result-title">
-            <?php
-                $title = is_array($doc->title) ? $doc->title[0] : $doc->title;
+  <?php $c=0; foreach ($results->response->docs as $doc):
+    $url = SolrSearch_Helpers_View::getDocumentUrl($doc); 
+    $imgHtml = SolrSearch_Helpers_View::getDocumentImg($doc, 'square_thumbnail');
+    if ($c==0): echo '<div class="row solr-results-row">'; endif;
+    echo '<div class="result col-md-3 col-sm-6 text-center">';
+    echo '<a href="'.$url.'">'.$imgHtml.'</a><br />';
+      $title = is_array($doc->title) ? $doc->title[0] : $doc->title;
                 if (empty($title)) {
                     $title = '<i>' . __('Untitled') . '</i>';
                 }
-                echo $title;
-            ?>
-        </a>
-            <?php echo $imgHtml; ?>
-
-
+    echo '<a href="'.$url.'">'.$title.'</a>';
+    echo '</div>';
+    if ($c==3): echo '</div>'; $c=0; else: $c++; endif;
+  endforeach;
+  if ($c<=3): echo '</div>'; endif;
+  ?>
 
       <!-- Highlighting. -->
       <?php if (get_option('solr_search_hl')): ?>
@@ -140,13 +131,12 @@
           <?php endforeach; ?>
         </ul>
       <?php endif; ?>
+  <?php echo pagination_links(); ?>
+  </div>
 
-    </div>
-
-  <?php endforeach; ?>
 
 </div>
 
 
-<?php echo pagination_links(); ?>
+
 <?php echo foot();
