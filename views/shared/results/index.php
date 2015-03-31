@@ -131,9 +131,9 @@
           <?php endforeach; ?>
         </ul>
       <?php endif; ?>
-  <?php echo pagination_links(); ?>
+  
   </div>
-
+  <?php echo pagination_links(); ?>
 
 </div>
 
