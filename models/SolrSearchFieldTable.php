@@ -76,6 +76,17 @@ class SolrSearchFieldTable extends Omeka_Db_Table
         return $this->findBySql('slug=?', array($slug), true);
     }
 
+    /**
+     * Find the facet with a given label.
+     *
+     * @param string $label The label.
+     * @return SolrSearchField
+     */
+    public function findByLabel($label)
+    {
+        return $this->findBySql('label=?', array($label), true);
+    }
+
 
     /**
      * Flag a metadata element to be indexed in Solr.
